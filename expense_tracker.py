@@ -25,6 +25,18 @@ records = []
 
 while True:
     os.system("cls")
+    
     print("==== EXPENSE TRACKER ====")
     print("1. Enter a record")
     print("=" * 28)
+    
+    choice = input("Enter the function you want to use: ").strip()
+    
+    if choice == '1':
+        date = input("Enter the date you buy this item: ")
+        
+        if not date:
+            print(f"\n{red}Please enter a valid number!{reset}\n")
+        elif len(date) != 4:
+            print("")
+        
